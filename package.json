@@ -16,7 +16,7 @@
     "cover": "npm test -- --coverage",
     "start": "webpack-dev-server --config ./webpack.docs.config.js --watch",
     "build:docs": "cross-env WEBPACK_BUILD=production webpack --config ./webpack.docs.config.js --progress --colors",
-    "build": "microbundle --generateTypes false",
+    "build": "microbundle --generateTypes false --jsx React.createElement",
     "prepublishOnly": "npm run build",
     "create-release": "npm run cover && sh ./scripts/release",
     "lint": "eslint src",
