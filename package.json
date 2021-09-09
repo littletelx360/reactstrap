@@ -35,10 +35,9 @@
     "LICENSE",
     "README.md",
     "CHANGELOG.md",
-    "lib",
     "dist",
     "src",
-    "es"
+    "types"
   ],
   "keywords": [
     "reactstrap",
