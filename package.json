@@ -16,7 +16,7 @@
     "cover": "npm test -- --coverage",
     "start": "start-storybook -s ./static -p 8080",
     "build:docs": "build-storybook -s ./static -o ./build",
-    "build": "microbundle --generateTypes false",
+    "build": "microbundle --generateTypes false --jsx React.createElement",
     "prepublishOnly": "npm run build",
     "create-release": "npm run cover && sh ./scripts/release",
     "lint": "eslint src",
